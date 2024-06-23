@@ -1,7 +1,4 @@
 #!/bin/sh
-
-# Many parts of this script were taken from @REIGNZ, @idkwhoiam322 and @raphielscape . Huge thanks to them.
-
 # Some general variables
 PHONE="beryllium"
 ARCH="arm64"
@@ -12,9 +9,12 @@ LINKER=""
 COMPILERDIR="/workspace/build/proton-clang"
 
 # Outputs
-mkdir out/outputs
-mkdir out/outputs/${PHONE}
-mkdir out/outputs/${PHONE}/10.3.7-SE
+rm -rf out
+rm -rf compile.log
+
+#
+mkdir -p out
+mkdir out/Ndra
 
 # Export shits
 export KBUILD_BUILD_USER=Ndra
@@ -81,7 +81,7 @@ then
           rm -rf out/outputs/${PHONE}/10.3.7-SE/*
       else
           echo "Build succesful"
-          cp out/arch/arm64/boot/Image.gz-dtb out/outputs/${PHONE}/10.3.7-SE/Image.gz-dtb
+          cp out/arch/arm64/boot/Image.gz-dtb out/Ndra/Image.gz-dtb
     Build_lld
     fi
 fi

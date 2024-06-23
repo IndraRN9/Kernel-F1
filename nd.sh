@@ -17,8 +17,8 @@ mkdir out/outputs/${PHONE}
 mkdir out/outputs/${PHONE}/10.3.7-SE
 
 # Export shits
-export KBUILD_BUILD_USER=πdraa
-export KBUILD_BUILD_HOST=1507
+export KBUILD_BUILD_USER=Ndra
+export KBUILD_BUILD_HOST=Irawan
 
 # Speed up build process
 MAKE="./makeparallel"

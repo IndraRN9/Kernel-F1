@@ -288,27 +288,27 @@
 
 &cpubw {
 	qcom,bw-tbl =
-		< MHZ_TO_MBPS(180, 16) >,
-		< MHZ_TO_MBPS(360, 16) >,
-		< MHZ_TO_MBPS(570, 16) >,
-		< MHZ_TO_MBPS(680, 16) >,
-		< MHZ_TO_MBPS(820, 16) >,
-		< MHZ_TO_MBPS(940, 16) >,
-		< MHZ_TO_MBPS(1120, 16) >;
+		< MHZ_TO_MBPS(250, 16) >,
+		< MHZ_TO_MBPS(500, 16) >,
+		< MHZ_TO_MBPS(610, 16) >,
+		< MHZ_TO_MBPS(760, 16) >,
+		< MHZ_TO_MBPS(840, 16) >,
+		< MHZ_TO_MBPS(960, 16) >,
+		< MHZ_TO_MBPS(1226, 16) >;
 };
 
 &llccbw {
 	qcom,bw-tbl =
 		< MHZ_TO_MBPS(200, 4) >,
 		< MHZ_TO_MBPS(300, 4) >,
-		< MHZ_TO_MBPS(480, 4) >,
-		< MHZ_TO_MBPS(600, 4) >,
-		< MHZ_TO_MBPS(790, 4) >,
-		< MHZ_TO_MBPS(968, 4) >,
-		< MHZ_TO_MBPS(1297, 4) >,
-		< MHZ_TO_MBPS(1596, 4) >,
-		< MHZ_TO_MBPS(1955, 4) >,
-		< MHZ_TO_MBPS(3504, 4) >;
+		< MHZ_TO_MBPS(451, 4) >,
+		< MHZ_TO_MBPS(547, 4) >,
+		< MHZ_TO_MBPS(681, 4) >,
+		< MHZ_TO_MBPS(768, 4) >,
+		< MHZ_TO_MBPS(1017, 4) >,
+		< MHZ_TO_MBPS(1296, 4) >,
+		< MHZ_TO_MBPS(1555, 4) >,
+		< MHZ_TO_MBPS(2904, 4) >;
 };
 
 &devfreq_cpufreq {
@@ -433,19 +433,19 @@
 			 480000 70
 			 576000 80
 			 652800 90
-			 748800 95
-			 825600 98
-			 902400 100
+			 748800 94
+			 825600 96
+			 902400 98
 			 979200 120
-			1056000 140
-			1132800 160
-			1228800 180
-			1324800 200
-			1420800 220
-			1516800 300
-			1612800 350
-			1689600 400
-			1766400 850
+			1056000 130
+			1132800 140
+			1228800 150
+			1324800 160
+			1420800 170
+			1516800 190
+			1612800 220
+			1689600 300
+			1766400 900
 		>;
 		idle-cost-data = <
 			10 8 6 4
@@ -473,10 +473,10 @@
 			2246400 8100
 			2323200 9000
 			2400000 10000
-			2476800 25000
-			2553600 50000
-			2649600 85000
-			2803200 300000
+			2476800 20000
+			2553600 40000
+			2649600 80000
+			2803200 100000
 		>;
 		idle-cost-data = <
 			25 20 15 10
@@ -532,7 +532,7 @@
 			2476800 185
 			2553600 194
 			2649600 215
-			2803200 450
+			2803200 400
 		>;
 		idle-cost-data = <
 			4 3 2 1
@@ -560,7 +560,7 @@
 
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
-			qcom,gpu-freq = <825000000>;
+			qcom,gpu-freq = <860000000>;
 			qcom,bus-freq = <12>;
 			qcom,bus-min = <12>;
 			qcom,bus-max = <12>;
@@ -568,7 +568,7 @@
 
 		qcom,gpu-pwrlevel@1 {
 			reg = <1>;
-			qcom,gpu-freq = <800000000>;
+			qcom,gpu-freq = <810000000>;
 			qcom,bus-freq = <12>;
 			qcom,bus-min = <11>;
 			qcom,bus-max = <12>;
@@ -576,7 +576,7 @@
 
 		qcom,gpu-pwrlevel@2 {
 			reg = <2>;
-			qcom,gpu-freq = <730000000>;
+			qcom,gpu-freq = <720000000>;
 			qcom,bus-freq = <12>;
 			qcom,bus-min = <10>;
 			qcom,bus-max = <12>;
@@ -584,10 +584,10 @@
 
 		qcom,gpu-pwrlevel@3 {
 			reg = <3>;
-			qcom,gpu-freq = <540000000>;
+			qcom,gpu-freq = <520000000>;
 			qcom,bus-freq = <10>;
 			qcom,bus-min = <9>;
-			qcom,bus-max = <11>;
+			qcom,bus-max = <12>;
 		};
 
 		qcom,gpu-pwrlevel@4 {

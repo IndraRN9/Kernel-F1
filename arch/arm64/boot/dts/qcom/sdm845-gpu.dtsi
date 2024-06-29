@@ -41,7 +41,7 @@
 			<  3879 /*  1017 MHz */ >,
 			<  4943 /*  1296 MHz */ >,
 			<  5931 /*  1555 MHz */ >,
-			<  6881 /*  1804 MHz */ >;
+			<  6881 /*  2804 MHz */ >;
 	};
 
 	msm_gpu: qcom,kgsl-3d0@5000000 {
@@ -172,12 +172,12 @@
 
 			qcom,l3-pwrlevel@1 {
 				reg = <1>;
-				qcom,l3-freq = <806400000>;
+				qcom,l3-freq = <906400000>;
 			 };
 
 			qcom,l3-pwrlevel@2 {
 				reg = <2>;
-				qcom,l3-freq = <1305600000>;
+				qcom,l3-freq = <1805600000>;
 			 };
 		 };
 

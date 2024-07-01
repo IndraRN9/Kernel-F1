@@ -17,8 +17,8 @@ mkdir -p out
 mkdir out/Ndra
 
 # Export shits
-export KBUILD_BUILD_USER=Ndra
-export KBUILD_BUILD_HOST=Irawan
+export KBUILD_BUILD_USER=ND
+export KBUILD_BUILD_HOST=NdraIrawan
 
 # Speed up build process
 MAKE="./makeparallel"
